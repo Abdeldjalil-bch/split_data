@@ -5,7 +5,7 @@ from imblearn.pipeline import Pipeline as ImbPipeline
 from sklearn.model_selection import train_test_split
 
 # Streamlit page configuration
-st.set_page_config(page_title="Machine Learning Model Selector")
+st.set_page_config(page_title="Splite data")
 
 # File uploader
 file = st.file_uploader(
