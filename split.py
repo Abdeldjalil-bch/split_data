@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 from sklearn.pipeline import make_pipeline
-from imblearn.pipeline import Pipeline as ImbPipeline
 from sklearn.model_selection import train_test_split
 
 # Streamlit page configuration
