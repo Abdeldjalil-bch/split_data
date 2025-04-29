@@ -46,13 +46,13 @@ if file:
     random_state = st.number_input(
         "Random State",
         min_value=0,
-        max_value=1000,
+        max_value=2500,
         value=42,
         help="Valeur pour garantir la reproductibilité"
     )
     
     # Option pour choisir la colonne de stratification
-    strat_options = [None] + list(data.select_dtypes(include=['object', 'category', 'bool', 'int']).columns)
+    strat_options = [None] + list(data.select_dtypes(include=['object', 'category', 'bool', 'int','float']).columns)
     strat_col = st.selectbox(
         "Colonne de stratification (optionnelle)",
         options=strat_options,
